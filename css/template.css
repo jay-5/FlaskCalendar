@@ -1,0 +1,28 @@
+.menu  li {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+}
+
+body {
+    margin: 0  auto;
+    max-width: 50em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    line-height: 1.5;
+    padding: 1em;
+    text-align: center;
+    background-color: #1a0f0f;
+}
+
+h1 {
+    color: #f8f8f8;
+}
+
+a {
+    color: #bb0303;
+}
+
+#list  li {
+    font-size: 20px;
+    list-style: none;
+}
