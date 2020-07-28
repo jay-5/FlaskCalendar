@@ -39,7 +39,7 @@ def cal():
     now = datetime.datetime.utcnow().isoformat() +  'Z'  # 'Z' indicates UTC time
     print('Getting the upcoming 10 events')
     # pylint: disable=maybe-no-member
-    events_result = service.events().list(calendarId='https://calendar.google.com/calendar?cid=amF5ZXdhcmRlbmUuNUBnbWFpbC5jb20', timeMin=now, maxResults=10, singleEvents=True, orderBy='startTime').execute()
+    events_result = service.events().list(calendarId='https://calendar.google.com/calendar/b/3?cid=aGQ5Z2h2NWttODFvaW9ycG1iNG44YXZsc29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ', timeMin=now, maxResults=10, singleEvents=True, orderBy='startTime').execute()
     events = events_result.get('items', [])
     if not events:
         print('No upcoming events found.')
